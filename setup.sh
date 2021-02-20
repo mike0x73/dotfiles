@@ -5,7 +5,7 @@ cd /opt
 git clone https://github.com/maestrogerardo/i3-gaps-deb.git
 cd i3-gaps-deb 
 ./i3-gaps-deb
-apt install compton ranger polybar rofi calc
+apt install compton ranger polybar rofi calc feh xrandr imagemagick neofetch
 mkdir ~/.config/i3
 cd $start_dir
 cp -r ./i3 ~/.config
