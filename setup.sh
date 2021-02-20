@@ -11,7 +11,6 @@ git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
 cd polybar-themes
 chmod +x setup.sh
 su - kali -c "cd /opt/polybar-themes; echo 1 | /opt/polybar-themes/setup.sh; exit"
-apt install compton ranger polybar rofi calc feh imagemagick neofetch -y
 cd $start_dir
 cp -r i3 /home/kali/.config
 cp -r rofi /home/kali/.config
