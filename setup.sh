@@ -5,7 +5,7 @@ apt install compton ranger polybar rofi calc feh imagemagick neofetch -y
 cd /opt
 git clone https://github.com/maestrogerardo/i3-gaps-deb.git
 cd i3-gaps-deb 
-./i3-gaps-deb
+echo "\n\n\n\n\n\n\n\n\n\n\n\n\n" | ./i3-gaps-deb
 cd /opt
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
 cd polybar-themes
