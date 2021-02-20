@@ -31,7 +31,7 @@ font pango:monospace 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite 
+bindsym $mod+Return exec terminator 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -256,45 +256,23 @@ mode "$mode_gaps_outer" {
 
 # Custom key bindings
 bindsym $sup+Return exec /home/mike/.config/polybar/scripts/launcher
-bindsym $mod+shift+x exec i3lock-fancy
-#bindsym $mod+shift+x exec i3lock -e -i /home/mike/Pictures/Disco-Dingo-1080.png -f
-#bindsym $mod+shift+x exec i3lock -c bb2a84 -f
-bindsym $mod+x exec /home/mike/Documents/scripts/i3lockcam.sh
 
 #bindsym $mod+p exec xfce4-appfinder
 bindsym $mod+c exec code
-bindsym $mod+o exec nautilus
+bindsym $mod+o exec thunar
 
 #Startup programs
 #exec_always feh --bg-center /home/mike/Pictures/ubuntu-wallpapers-7.png
-exec_always feh --bg-fill /usr/share/backgrounds/warty-final-ubuntu.png
+exec_always feh --bg-fill /usr/share/backgrounds/kali/kali-small-logo-16x9.png
 
 #exec_always --no-startup-id betterlockscreen -w dim
 #bindsym $mod+shift+x exec betterlockscreen -l dim
 
-exec setxkbmap gb basic
+exec_always setxkbmap -layout gb
 exec_always compton -bf
-#exec setxkbmap -layout gb
-exec firefox
-exec spotify
-
-#exec urxvt --hold -e htop
-#exec urxvt --hold -e /home/mike/Documents/scripts/startup
-exec termite -e htop
-exec termite -e /home/mike/Documents/scripts/startup --hold
 
 # Pulse Audio controls
 bindsym $mod+n exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
 bindsym $mod+b exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
 bindsym $mod+m exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
 
-# Sreen brightness controls
-bindsym $mod+i exec sudo /usr/local/bin/light -A 2 # increase screen brightness
-bindsym $mod+u exec sudo /usr/local/bin/light -U 2 # decrease screen brightness
-#bindsym $mod+i exec sudo /home/mike/programs/bright/bright up 5 
-#bindsym $mod+u exec sudo /home/mike/programs/bright/bright down 5
-
-# Media player controls
-bindsym $mod+shift+m exec playerctl play-pause
-bindsym $mod+shift+b exec playerctl previous
-bindsym $mod+shift+n exec playerctl next
