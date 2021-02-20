@@ -11,4 +11,5 @@ cd $start_dir
 cp -r ./i3 ~/.config
 cp -r ./rofi ~/.config
 cp -r ./polybar ~/.config
+timedatectl set-timezone Europe/London
 echo "=== Now restart to run i3 ==="
