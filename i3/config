@@ -144,14 +144,6 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Assignments
 assign [class="Firefox"] $ws3
-assign [class="Wireshark"] $ws2
-assign [class="Maltego"] $ws5
-assign [class="Code"] $ws4
-for_window [class="Spotify"] move to workspace $ws10
-assign [class="Evince"] $ws5
-for_window [class="libreoffice"] move to workspace $ws5
-assign [class="^Vmware$" instance="^vmware$"] $ws6
-for_window [class="burp-startBurp"] move to workspace $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
