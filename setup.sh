@@ -1,7 +1,7 @@
 start_dir=$(echo $PWD)
 echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 apt update -y
-apt install compton ranger polybar rofi calc feh imagemagick neofetch kitty -y
+apt install compton ranger polybar rofi calc feh imagemagick neofetch kitty alacarte -y
 cd /opt
 git clone https://github.com/maestrogerardo/i3-gaps-deb.git
 cd i3-gaps-deb 

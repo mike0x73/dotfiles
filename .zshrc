@@ -196,3 +196,4 @@ ZSH_THEME="risto"
 
 # Custom aliases
 alias ssh="TERM='xterm-256color' ssh"
+alias nc="rlwrap nc"
