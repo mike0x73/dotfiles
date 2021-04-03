@@ -256,7 +256,7 @@ bindsym $mod+o exec thunar
 
 #Startup programs
 #exec_always feh --bg-center /home/mike/Pictures/ubuntu-wallpapers-7.png
-exec_always feh --bg-fill /usr/share/backgrounds/kali/kali-small-logo-16x9.png
+exec_always feh --bg-fill /usr/share/backgrounds/kali/kali-glitchsea-16x9.jpg
 
 #exec_always --no-startup-id betterlockscreen -w dim
 #bindsym $mod+shift+x exec betterlockscreen -l dim
