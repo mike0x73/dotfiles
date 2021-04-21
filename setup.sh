@@ -1,5 +1,6 @@
 start_dir=$(echo $PWD)
-echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
+sudo echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
+sudo cp -f lightdm/lightdm-gtk-greeter.conf /etc/lightdm
 apt update -y
 apt install compton ranger polybar rofi calc feh imagemagick neofetch kitty alacarte python3 python3-pip python2 gdb -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -q -o- | sudo
