@@ -3,8 +3,8 @@ sudo echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free"
 sudo cp -f lightdm/lightdm-gtk-greeter.conf /etc/lightdm
 apt update -y
 apt install compton ranger polybar rofi calc feh imagemagick neofetch kitty alacarte python3 python3-pip python2 gdb -y
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -q -o- | sudo
-pip2 install setuptools pwntool
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -q -o- | sudo python2
+pip2 install setuptools pwntools
 pip3 install keystone-engine unicorn capstone ropper pwntools
 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | bash
 cd /opt
