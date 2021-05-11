@@ -5,7 +5,7 @@ apt update -y
 apt install compton ranger polybar rofi calc feh imagemagick neofetch kitty alacarte python3 python3-pip python2 gdb -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -q -o- | sudo
 pip2 install setuptools pwntool
-pip3 install keystone-engine unicorn capstone ropper
+pip3 install keystone-engine unicorn capstone ropper pwntools
 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | bash
 cd /opt
 git clone https://github.com/maestrogerardo/i3-gaps-deb.git
