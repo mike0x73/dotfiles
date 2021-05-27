@@ -7,4 +7,4 @@ RUN pip2 install --default-timeout=100 setuptools pwntools
 RUN apt install python3 python3-pip -y
 RUN pip3 install --default-timeout=100 keystone-engine unicorn capstone ropper pwntools
 RUN wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | bash
-RUN mkdir /root/hacking
+RUN mkdir /hacking
