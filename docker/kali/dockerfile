@@ -1,7 +1,8 @@
 FROM kalilinux/kali-rolling:latest
+ENV LANG C.UTF-8
 RUN apt update -y
 RUN apt upgrade -y
-RUN apt install vim git python2 curl wget gcc gdb -y 
+RUN apt install vim git python2 curl wget gcc gdb netcat net-tools inetutils-ping -y 
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -q -o- | python2
 RUN pip2 install --default-timeout=100 setuptools pwntools
 RUN apt install python3 python3-pip -y
