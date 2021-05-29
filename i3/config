@@ -255,7 +255,8 @@ bindsym $mod+c exec code
 bindsym $mod+o exec thunar
 
 #Startup programs
-exec_always feh --bg-fill /usr/share/backgrounds/kali/kali-small-logo-16x9.png
+#exec_always feh --bg-fill /usr/share/backgrounds/kali/kali-small-logo-16x9.png
+exec_always feh --bg-fill /home/kali/Pictures/Wallpapers/London.jpg
 
 exec_always setxkbmap -layout gb
 exec_always compton -bf
