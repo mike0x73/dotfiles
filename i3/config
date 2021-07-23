@@ -261,7 +261,7 @@ exec_always feh --bg-fill /home/kali/Pictures/Wallpapers/London.jpg
 exec_always setxkbmap -layout gb
 exec_always compton -bf
 
-exec vmware-usr-suid-wrapper
+exec vmware-user-suid-wrapper
 
 # Pulse Audio controls
 bindsym $mod+n exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
