@@ -2,13 +2,14 @@ start_dir=$(echo $PWD)
 sudo echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 sudo apt update -y; apt upgrade -y; apt autoremove -y; apt dist-upgrade -y
 cp -f lightdm/lightdm-gtk-greeter.conf /etc/lightdm
-apt install compton ranger polybar rofi calc feh imagemagick neofetch kitty alacarte python2 gdb -y
+apt install compton ranger polybar rofi calc feh imagemagick neofetch kitty alacarte python2 gdb zim mlocate  -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -q -o- | sudo python2
 pip2 install setuptools 
 pip2 install --upgrade setuptools
 pip2 install pwntools
-apt install python3 python3-pip # Must be installed after pip2
-pip3 install keystone-engine unicorn capstone ropper pwntools
+rm /usr/local/bin/pip
+apt install python3 python3-pip -y # Must be installed after pip2
+pip install keystone-engine unicorn capstone ropper pwntools
 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | bash
 cd /opt
 git clone https://github.com/maestrogerardo/i3-gaps-deb.git
