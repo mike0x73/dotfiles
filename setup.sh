@@ -30,4 +30,5 @@ cp .zshrc /home/kali/.zshrc -f
 chown kali:kali /home/kali/.config -R
 chown kali:kali /home/kali/.zshrc
 timedatectl set-timezone Europe/London
+apt-mark hold i3 i3-wm
 echo "=== Now restart to run i3 ==="
