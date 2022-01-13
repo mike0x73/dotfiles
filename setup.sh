@@ -9,7 +9,7 @@ pip2 install --upgrade setuptools
 pip2 install pwntools
 rm /usr/local/bin/pip
 apt install python3 python3-pip -y # Must be installed after pip2
-pip install keystone-engine unicorn capstone ropper pwntools
+pip install keystone-engine unicorn capstone ropper pwntools polybar-reload
 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | bash
 cd /opt
 git clone https://github.com/maestrogerardo/i3-gaps-deb.git
