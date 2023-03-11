@@ -39,3 +39,4 @@ chmod +x setup.sh
 ./setup.sh
 cd ../
 rm -rf rofi
+rm ~/.config/rofi/config.rasi
