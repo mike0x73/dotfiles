@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Ghidra
+GenericName=Gridra
+Comment=NSA Disassembler
+TryExec=ghidraRun
+Exec=ghidraRun
+Terminal=false
+Type=Application
+Icon=/home/mike/Documents/tools/ghidra_10.2.3_PUBLIC/docs/GhidraClass/Beginner/Images/GhidraLogo64.png
+Categories=Reverse Engineering
+StartupNotify=false

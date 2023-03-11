@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Ida
+GenericName=Ida Free
+Comment=Interactive Disassembler
+TryExec=ida64
+Exec=ida64
+Terminal=False
+Type=Application
+Categories=Reverse Engineering
+Icon=/home/mike/Documents/tools/idafree/appico64.png
+StartupNotify=false

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Binary Ninja
+GenericName=Binja
+Comment=Vector35 Disassembler
+TryExec=binaryninja
+Exec=binaryninja
+Terminal=False
+Type=Application
+Icon=/home/mike/Documents/tools/binaryninja/docs/img/logo.png
+Categories=Reverse Engineering
+StartupNotify=false

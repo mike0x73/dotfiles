@@ -18,4 +18,7 @@ bash custom_installs.txt
 cp -r configs/* ~/.config
 mkdir ~/shares
 sudo cp -f backgrounds/* /usr/share/backgrounds
+
+sudo cp -r applications/* /usr/share/applications
+
 echo "Reboot to enable i3"
