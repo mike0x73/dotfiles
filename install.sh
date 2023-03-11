@@ -20,5 +20,5 @@ mkdir ~/shares
 sudo cp -f backgrounds/* /usr/share/backgrounds
 
 sudo cp -r applications/* /usr/share/applications
-
+sudo echo "@reboot /usr/bin/vmhgfs-fuse .host:/ /home/mike/shares -o subtype=vmhgfs-fuse,allow_other" >> /var/spool/cron/crontabs/root
 echo "Reboot to enable i3"
