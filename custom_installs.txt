@@ -1,0 +1,41 @@
+mkdir ~/Documents/tools
+
+## ghidra ##
+wget $(curl -s https://api.github.com/repos/NationalSecurityAgency/ghidra/releases/latest | grep browser_download_url | cut -d '"' -f 4)
+unzip ghidra* -d ~/Documents/tools/
+rm ghidra*.zip
+sudo ln -s $(find ~ | grep ghidraRun | grep -v .bat) /usr/local/bin/
+
+## ida
+wget $(curl -s https://hex-rays.com/ida-free/#download | grep "IDA Free for Linux" | cut -d \" -f2)
+chmod +x $(find ~ | grep idafree)
+$(find ~ | grep idafree) --mode unattended --prefix ~/Documents/tools/idafree
+rm $(find ~ | grep idafree | grep .run)
+sudo ln -s $(find ~ | grep ida64) /usr/local/bin/
+
+## gef
+bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+
+## oh-my-zsh
+curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o ohmyzsh.sh
+chmod +x ./ohmyzsh.sh
+echo 1 | ./ohmyzsh.sh
+rm ohmyzsh.sh
+cp -f .zshrc ~/
+chsh -s $(which zsh)
+
+## polybar
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+mv polybar-themes ~/.config
+start_dir=$(echo $PWD)
+cd ~/.config/polybar-themes
+echo 1 | ./setup.sh
+cd $start_dir
+
+## rofi
+git clone --depth=1 https://github.com/adi1090x/rofi.git 
+cd rofi 
+chmod +x setup.sh
+./setup.sh
+cd ../
+rm -rf rofi
