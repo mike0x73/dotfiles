@@ -20,4 +20,6 @@ mkdir ~/shares
 sudo cp -f backgrounds/* /usr/share/backgrounds
 
 sudo cp -r applications/* /usr/share/applications
+echo "Select i3 Themes..."
+lxappearance
 echo "Reboot to enable i3"

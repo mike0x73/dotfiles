@@ -30,3 +30,4 @@ thunar
 tcpdump
 wireshark
 htop
+lxappearance
