@@ -13,7 +13,6 @@ neofetch
 kitty
 ltrace
 mlocate
-alacarte
 ranger
 compton
 polybar
@@ -30,3 +29,4 @@ checksec
 thunar
 tcpdump
 wireshark
+htop

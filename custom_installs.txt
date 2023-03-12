@@ -40,3 +40,13 @@ chmod +x setup.sh
 cd ../
 rm -rf rofi
 rm ~/.config/rofi/config.rasi
+
+## burpsuite
+cd ~/Documents/tools
+bs_version=$(curl -s https://portswigger.net/burp/releases | grep -m1 "Professional / Community" | cut -d ' ' -f 17 | awk -F'</span>' '{print $1}')
+curl https://portswigger-cdn.net/burp/releases/download?product=community\&version=${bs_version}\&type=Linux -o burpsuite.sh
+chmod +x burpsuite.sh
+./burpsuite.sh -q
+rm burpsuite.sh
+cd $start_dir
+
