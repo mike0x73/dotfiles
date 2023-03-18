@@ -258,7 +258,7 @@ bindsym $mod+o exec thunar
 exec_always feh --bg-fill /usr/share/backgrounds/Twisted_Gradients_by_Gustavo_Brenner.png
 
 exec_always setxkbmap -layout gb
-exec_always compton -bf
+exec_always compton -cf
 
 exec vmware-user-suid-wrapper
 exec --no-startup-id polybar-reload
