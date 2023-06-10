@@ -6,6 +6,6 @@ TryExec=ghidraRun
 Exec=ghidraRun
 Terminal=false
 Type=Application
-Icon=/home/mike/Documents/tools/ghidra_10.2.3_PUBLIC/docs/GhidraClass/Beginner/Images/GhidraLogo64.png
+Icon=/home/mike/Documents/tools/ghidra_10.3_PUBLIC/docs/GhidraClass/Beginner/Images/GhidraLogo64.png
 Categories=Reverse Engineering
 StartupNotify=false

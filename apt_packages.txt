@@ -22,7 +22,7 @@ code
 docker.io
 netcat-traditional
 nmap
-i3-gaps
+i3
 zsh
 pulseaudio-utils
 checksec
